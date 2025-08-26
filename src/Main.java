@@ -1,43 +1,32 @@
-import java.sql.SQLOutput;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-class Car {
-    String name;
-    String color;
-    int price;
-    int wheel;
-    boolean power;
+class a4Paper {
+    static int width = 210;
+    static int height = 297;
 
-    void Power() {
-        power = !power;
-        System.out.println("부르릉~!");
-    };
+    String write;
+    Boolean isOk = true;
+
+    void Ggugigi() {isOk = false;}
 
 }
 
 public class Main {
     public static void main(String[] args) {
-        Car car1 = new Car();
-        Car car2 = new Car();
 
-        car1.name = "따릉이";
-        car2.name = "부릉이";
+        a4Paper p1 = new a4Paper();
+        a4Paper p2 = new a4Paper();
 
-        car1.color = "blue";
-        car2.color = "black";
+        System.out.println("p1's width " + p1.width);
+        System.out.println("p1's height " + p1.height);
 
-        car1.wheel = 6;
-        car2.wheel = 4;
+        System.out.println("p2's width " + p2.width);
+        System.out.println("p2's height " + p2.height);
 
-        System.out.println("car1 name : " + car1.name);
-        System.out.println("car1 color : " + car1.color);
-        System.out.println("car1 wheel : " + car1.wheel);
-        car1.Power();
+        p1.write = "안녕하세요 저는 1학년 1반 강준영입니다.";
+        p2.write = "안녕하세요 저는 1학년 1반 석준영입니다.";
 
-        System.out.println("car2 name : " + car2.name);
-        System.out.println("car2 color : " + car2.color);
-        System.out.println("car2 wheel : " + car2.wheel);
-        car2.Power();
+        System.out.println("p1 :" + p1.write);
+        System.out.println("p2 :" + p2.write);
     }
 }
